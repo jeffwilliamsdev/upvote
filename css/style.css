@@ -1,0 +1,46 @@
+		ul { list-style-type:none;}
+		.song-list {
+			width:800px;
+			max-width:100%;
+		}
+		li {
+			border-radius:10px;
+		}
+		.header {
+			margin:30px;
+		}
+		h1, h2, h3 {
+			margin:0;
+		}
+
+		.info-container {
+			height:80px;
+			background-color:#fefefe;
+			
+			border:solid 1px #f1f1f1;
+		}
+		.title {
+			width:65%;
+			float:left;
+			padding:5%;
+			font-size:20px;
+		}
+		.votes {
+			width:12%;
+			margin:20px 10px;
+			float:left;
+		}
+		.vote-button {
+			float:left;
+			width:13%;
+			height:100%;
+			cursor:pointer;
+			font-size:30px;
+			padding:10px;
+			line-height:.8;
+		}
+		.banner-container {
+			width:100%;
+			
+
+		}
