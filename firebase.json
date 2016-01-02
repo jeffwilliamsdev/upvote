@@ -1,0 +1,9 @@
+{
+  "firebase": "bandupvote",
+  "public": "/",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
