@@ -1,18 +1,40 @@
 {
 	"The Killers": {
-		"songs":
-				[ { "title":"Mr. Brightside","votes":0 }, 
-				  { "title":"Somebody Told Me","votes":0 },
-				  { "title":"Jenny Was A Friend Of Mine","votes":0 },
-				  { "title":"Dustland Fairytale","votes":0 },
-				  { "title":"All These Things That I Have Done","votes":0 },
-				  { "title":"Spaceman","votes":0},
-				  { "title":"Read My Mind","votes":0},
-				  { "title":"Andy Your'e A Star","votes":0}
-				]
+		"songs": [ 
+			{ 
+				"title":"Mr. Brightside",
+				"votes":0 
+			}, 
+		  	{ 	
+		  		"title":"Somebody Told Me",
+		  		"votes":0 
+		  	},
+		    { 	
+		    	"title":"Jenny Was A Friend Of Mine",
+		    	"votes":0 
+		    },
+		    { 	
+		    	"title":"Dustland Fairytale",
+		    	"votes":0 
+		    },
+		    { 	
+		    	"title":"All These Things That I Have Done",
+		    	"votes":0 
+		    },
+		    { 	
+		    	"title":"Spaceman",
+		    	"votes":0},
+		    { 	
+		    	"title":"Read My Mind",
+		    	"votes":0},
+		    { 	
+		    	"title":"Andy Your'e A Star",
+		    	"votes":0}
+		]
 	},
 	"Coldplay": {
-			"songs": [{
+			"songs": [
+				{
 						"title":"Viva La Vida",
 						"votes":0
 					},

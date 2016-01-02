@@ -9,54 +9,7 @@
 	<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
 	<title>Band Upvote - Vote In Your Favorite Band's Setlist</title>
 
-	<style>
-		ul { list-style-type:none;}
-		.song-list {
-			width:800px;
-			max-width:100%;
-		}
-		li {
-			border-radius:10px;
-		}
-		.header {
-			margin:30px;
-		}
-		h1, h2, h3 {
-			margin:0;
-		}
-
-		.info-container {
-			height:80px;
-			background-color:#fefefe;
-			
-			border:solid 1px #f1f1f1;
-		}
-		.title {
-			width:65%;
-			float:left;
-			padding:5%;
-			font-size:20px;
-		}
-		.votes {
-			width:12%;
-			margin:20px 10px;
-			float:left;
-		}
-		.vote-button {
-			float:left;
-			width:13%;
-			height:100%;
-			cursor:pointer;
-			font-size:30px;
-			padding:10px;
-			line-height:.8;
-		}
-		.banner-container {
-			width:100%;
-			
-
-		}
-	</style>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -65,36 +18,29 @@
 			<div class="banner-container">
 				<img class="img-responsive" src="https://professionalvoiceblog.files.wordpress.com/2015/02/professional-voice-blog-colorad-voice-clinic-hearing-study-decibel-effects-hearing-loss-concert-sound-dr-dave-opperman-study-research-noice-ent-doctors-in-colorado-ent-doctors-in-denver.jpg"/>
 			</div>
-		</row>
+		</div>
+		<br>
+		<div class="row">
+			<h2 class="text-center">Live Updating Demo Using Firebase</h2>
+			<h1 class="text-center header">Vote For Your Favorite Band's Song</h1>
 
-	<!--<select id="band" class="form-control">
-		<option value="The Killers">The Killers</option>
-		<option value="The Beatles">The Beatles</option>
-		<option value="Coldplay">Coldplay</option>
-	</select>
--->
-
-	<h1 class="text-center header">Vote For Your Favorite Band's Song</h1>
-	<h2 id="artist-name" class="text-center">The Killers</h2>
-	<ul class="col-sm-12 col-sm-8 col-sm-offset-2" id="song-list">
-	<script id="template" type="text/x-handlebars-template">
-			{{#each this}}
-			<li class="info-container">
-				<h2 class="title">{{ title }}</h2>
-				<h3 class="votes text-center" data-votes={{ id }}> {{ votes }}</h3>
-				<div class="vote-button text-center" data-votes={{ id }}> + </div>
-			</li>
-			<div class="clearfix"></div>
-			{{/each}}
-	</script>
-	</ul>
-	
+			<h2 id="artist-name" class="text-center">The Killers</h2><br>
+			<ul class="col-sm-12 col-sm-8 col-sm-offset-2" id="song-list">
+			<script id="template" type="text/x-handlebars-template">
+					{{#each this}}
+					<li class="info-container">
+						<h2 class="title">{{ title }}</h2>
+						<h3 class="votes text-center" data-votes={{ id }}> {{ votes }}</h3>
+						<div class="vote-button text-center" data-votes={{ id }}> + </div>
+					</li>
+					<div class="clearfix"></div>
+					{{/each}}
+			</script>
+			</ul>
+			
+		</div>
 	</div>
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-	<script src = "upvote.js"></script>
-	
-
-
-	
+	<script src = "upvote.js"></script>	
 </body>
 </html>
