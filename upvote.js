@@ -8,7 +8,7 @@ function Upvote(config) {
 	 	this.songs = [];
 	 	this.votes = [];
 	 	this.songId = null;
-	 	
+
 }
 
 Upvote.prototype.fetch = function (fetchCallback) {
@@ -17,7 +17,7 @@ Upvote.prototype.fetch = function (fetchCallback) {
 			var data = snapshot.val();
 			for (var i=0;i<data.songs.length;i++) {
 				self.songs.push({"id":i,"title":data.songs[i].title,"votes":data.songs[i].votes});
-			}	
+			}
 			if (fetchCallback && (typeof fetchCallback === "function") ) {
 				fetchCallback();
 			}
@@ -53,20 +53,20 @@ Upvote.prototype.attachTemplate = function(onComplete) {
 
 
 var upvote = new Upvote({
-	template: $('#template').html(),	
+	template: $('#template').html(),
 	templateContainer: $('#song-list'),
 	artist: $("#artist-name").html()
-});	
+});
 
 
-// fetch the data and attach template after data returned 
+// fetch the data and attach template after data returned
 upvote.fetch(function() {
 	upvote.attachTemplate(updateVoteButton);
 });
 
 
 var updateVoteButton = function() {
-	$('div.vote-button').on("click",function() { 
+	$('div.vote-button').on("click",function() {
 		var songId = $(this).data('votes');
 		upvote.voteClicked( songId );
 	});
